@@ -1,0 +1,9 @@
+<h1>{{ specification.spec_name }}</h1>
+<table border="1">
+{% for requirement in specification.requirement_set.all %}
+  <tr>
+    <td>{{ requirement.heading_text }}</td>
+    <td>{{ requirement.body_text }}</td>
+  </tr>
+{% endfor %}
+</table>

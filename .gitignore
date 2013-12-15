@@ -1,2 +1,6 @@
 *~
 *.pyc
+GRIND.egg-info
+build
+dist
+env

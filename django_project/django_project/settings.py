@@ -1,5 +1,5 @@
 """
-Django settings for grind_server project.
+Django settings for django_project project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -36,9 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'sqleditoronline',
-    'grind_server_app',
-    'polls',
+    'kind',
+    'django_extensions', # Added for show_urls
 )
 
 MIDDLEWARE_CLASSES = (
@@ -50,9 +49,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'grind_server.urls'
+ROOT_URLCONF = 'django_project.urls'
 
-WSGI_APPLICATION = 'grind_server.wsgi.application'
+WSGI_APPLICATION = 'django_project.wsgi.application'
 
 
 # Database
