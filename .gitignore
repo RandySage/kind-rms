@@ -4,3 +4,6 @@ GRIND.egg-info
 build
 dist
 env
+
+# Do not commit the development database!
+db.sqlite3
