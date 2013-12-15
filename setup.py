@@ -6,13 +6,21 @@ try:
     with open('./env/bin/pip'):
         subprocess.call("./env/bin/pip install -r requirements.txt",shell=True)
 except IOError:
-    print "Unable to pen ./env/bin/pip - did you run:"
-    print "  virtualenv env"
-    print "???"
+    print '''
+Unable to pen ./env/bin/pip - did you run:
+  virtualenv env
+???
+'''
 
 
+print '''
 
-print "This should be cleaned up to follow standard paradigms"
+
+This should be cleaned up to follow standard setup.py paradigms
+
+Also, run following to set up an admin user:
+   ./env/bin/python django_project/manage.py createsuperuser
+'''
 
 # from setuptools import setup, find_packages
 # DESCRIPTION = ("DOORS'-style Requirements Management System - KIND Is Not DOORS")
