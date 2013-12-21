@@ -19,6 +19,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '-^*maq9dm$+h_5sk&=ed1ctyf6dbm65#q$qr7tyd*x87d5xfl7'
 
+# Set your site url for security
+SITE_URL = 'http://localhost:8000'
+
+# BrowserID aka Persona
+LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL_FAILURE = '/'
+LOGOUT_REDIRECT_URL = '/'
+BROWSERID_CREATE_USER = True
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -32,6 +41,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
+    'django_browserid',  # Load after auth
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -51,6 +61,7 @@ MIDDLEWARE_CLASSES = (
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
+    'django_browserid.context_processors.browserid',
     "django.contrib.auth.context_processors.auth",
     "django.core.context_processors.debug",
     "django.core.context_processors.i18n",
@@ -59,7 +70,12 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.tz",
     "django.contrib.messages.context_processors.messages",
     'django.core.context_processors.request',
-    )
+)
+
+AUTHENTICATION_BACKENDS = (
+   'django.contrib.auth.backends.ModelBackend', # required for admin
+   'django_browserid.auth.BrowserIDBackend',
+)
 
 ROOT_URLCONF = 'django_project.urls'
 
