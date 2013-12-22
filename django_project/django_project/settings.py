@@ -49,6 +49,7 @@ INSTALLED_APPS = (
     'kind',
     'django_extensions', # Added for show_urls
     'django_tables2',
+    'todo',
 )
 
 MIDDLEWARE_CLASSES = (

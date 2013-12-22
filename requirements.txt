@@ -1,4 +1,11 @@
-django==1.6
-django_extensions
-django-tables2
-django-browserid
+Django==1.6
+KIND==0.0-dev
+django-browserid==0.9
+django-extensions==1.2.5
+django-tables2==0.14.0
+-e git+https://github.com/shacker/django-todo.git@4dfab71f33326ba7a4e5704128fdcbba207b7de0#egg=django_todo-master
+fancy-tag==0.2.0
+requests==2.1.0
+six==1.4.1
+wsgiref==0.1.2
+django-jquery
