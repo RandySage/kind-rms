@@ -4,6 +4,13 @@ GRIND.egg-info
 build
 dist
 env
+static
 
 # Do not commit the development database!
 db.sqlite3
+
+# or the production settings
+settings_production.py
+
+# Somewhere to dump random stuff
+archive

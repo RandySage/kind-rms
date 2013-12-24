@@ -25,3 +25,8 @@ My overall experience using IBM DOORS left me thinking that (even then) modern w
 At the end of 2011, I escaped the things I didn't like about DOORS by leaving my big-aerospace company and joining a startup, which naturally means I gave up the good features as well.  I still supported specification and verification efforts, but I found myself even busier and I couldn't have cared much less how imperfect our tools were because I had zero time to do anything about it.  
 
 In mid 2013, I stopped working full time for that startup in large part to be able to pursue my own projects part time.  This project did/does not rank very highly, but now I see a potential opportunity to benefit one of my day jobs with such a tool - which trumps some of my other longer-term objectives.  (It helps that some of my high priorities will benefit from picking up Django or boning up on Rails.)  I find that I like the DOORS/database-style RMS, but a brief interaction with IBM's sales team quickly convinced me that I'm not interested in paying for their product.
+
+todo
+====
+
+1. Change wsgi to populate the virtual environment using find commands

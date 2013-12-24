@@ -1,0 +1,9 @@
+
+
+import settings  # NOT WORKING (I'M REPLICATING settings.py UNTIL FIXED)
+
+DEBUG = TEMPLATE_DEBUG = False
+DATABASES['default']['NAME'] = '/tmp/db_prod.sqlite3'
+
+# Site url required for Persona / browserid
+SITE_URL = 'http://example.com'
