@@ -12,7 +12,7 @@ Unable to open ./venv/bin/pip - did you run:
 ???
 '''
 
-subprocess.call("cp django_project/db.sqlite3.example django_project/db.sqlite3",shell=True)
+subprocess.call("cp kindrms/db.sqlite3.example kindrms/db.sqlite3",shell=True)
 
 
 print '''
@@ -33,7 +33,7 @@ Also, the example database was copied over the sqlite database.
 #     version='0.0-dev',
 #     description=DESCRIPTION,
 #     url='https://github.com/ransage/kind',
-#     packages=['django_project'],
+#     packages=['kindrms'],
 #     install_requires=['setuptools'],
 #     tests_require=['nose'],
 #     test_suite='src'

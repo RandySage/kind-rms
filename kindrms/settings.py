@@ -1,5 +1,5 @@
 """
-Django settings for django_project project.
+Django settings for kindrms project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -77,9 +77,9 @@ AUTHENTICATION_BACKENDS = (
    'django_browserid.auth.BrowserIDBackend',
 )
 
-ROOT_URLCONF = 'django_project.urls'
+ROOT_URLCONF = 'kindrms.urls'
 
-WSGI_APPLICATION = 'django_project.wsgi.application'
+WSGI_APPLICATION = 'kindrms.wsgi.application'
 
 
 # Database
