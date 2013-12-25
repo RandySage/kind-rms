@@ -3,12 +3,12 @@
 import subprocess
 
 try:
-    with open('./env/bin/pip'):
-        subprocess.call("./env/bin/pip install -r requirements.txt",shell=True)
+    with open('./venv/bin/pip'):
+        subprocess.call("./venv/bin/pip install -r requirements.txt",shell=True)
 except IOError:
     print '''
-Unable to open ./env/bin/pip - did you run:
-  virtualenv env
+Unable to open ./venv/bin/pip - did you run:
+  virtualenv venv
 ???
 '''
 

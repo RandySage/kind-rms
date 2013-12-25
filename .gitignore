@@ -3,7 +3,7 @@
 GRIND.egg-info
 build
 dist
-env
+venv
 static
 
 # Do not commit the development database!
